@@ -9,16 +9,18 @@ connectToDB()
 const app = express();
 
 app.use(
-	cors({
-		origin: ['http://localhost:5174', 'http://localhost:5173'],
-		methods: ['GET', 'PUT', 'POST', 'DELETE'],
-		credentials: true,
-	}),
+	cors(
+	// 	{
+	// 	origin: ['http://localhost:5174', 'http://localhost:5173'],
+	// 	methods: ['GET', 'PUT', 'POST', 'DELETE'],
+	// 	credentials: true,
+	// }
+),
 );
 
 
 app.use(express.json());
-const port = 3000;
+const port = 4000;
 app.use("/api/auth",userRoutes)
 
 app.use("/", (req, res, next) => {

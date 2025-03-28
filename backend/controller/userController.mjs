@@ -29,6 +29,7 @@ const login = async (req, res) => {
         res.status(400).json({ error: err, status: 400 });
     }
 };
+
 const createUser = async (req, res) => {
     console.log(chalk.bgCyan("incoming call to signup api"));
     if (!req.body) {
