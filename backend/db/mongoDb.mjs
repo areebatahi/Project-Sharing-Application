@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import 'dotenv/config'
 import chalk from 'chalk';
 
-const dbName = 'smit'; // Define the database name
+const dbName = 'hackathon-project1'; // Define the database name
 const url = `${process.env.MONGO_URL}/${dbName}`;
 
 const connectToDB=async()=>{

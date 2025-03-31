@@ -22,6 +22,7 @@ app.use(
 app.use(express.json());
 const port = 4000;
 app.use("/api/auth",userRoutes)
+app.use("/api/data",userRoutes)
 
 app.use("/", (req, res, next) => {
   console.log("Request URL:", req.url, "method: ", req.method);

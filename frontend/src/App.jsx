@@ -5,7 +5,6 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import LoginPage from './pages/LoginPage'
-import Login from './pages/LoginPage'
 import Logout from './pages/Logout'
 import Profile from './pages/Profile'
 import Signup from './pages/Signup'
@@ -13,6 +12,8 @@ import Update from './pages/Update'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/Footer';
+import Project from './components/project';
+import ProjectForm from './pages/ProjectForm';
 
 function App() {
 
@@ -42,6 +43,8 @@ function App() {
         {/* <Route path="/admin" element={<AdminPages />} /> */}
         <Route path="/profile" element={<Profile />} />
         <Route path="/update" element={<Update />} />
+        <Route path='/project' element={<Project />}/>
+        <Route path='/ProjectForm' element ={<ProjectForm />}/>
       </Routes>
 
       <Footer />
