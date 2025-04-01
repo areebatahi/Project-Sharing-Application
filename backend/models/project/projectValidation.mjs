@@ -1,4 +1,3 @@
-import { required } from 'joi';
 import mongoose from 'mongoose';
 const projectSchema = new mongoose.Schema(
     {
@@ -26,5 +25,5 @@ const projectSchema = new mongoose.Schema(
         },
     },
 );
-const project = mongoose.model('Project', projectSchema);
-export default project;
+const Project = mongoose.model('Project', projectSchema);
+export default Project; 
