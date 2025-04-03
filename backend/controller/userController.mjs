@@ -57,7 +57,7 @@ const createUser = async (req, res) => {
         }
         console.error(chalk.bgRed("Signup Error:"), error);
         res.status(500).json({
-            message: "Internal Server Error",
+            message: "Internal Server Error", 
             error: error.message,
         });
     }
